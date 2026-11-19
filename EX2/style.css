@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: gray;
+    height: 80px;
+}
+
+.logo {
+    margin: 20px;
+    font-size: 40px;
+}
+
+.menu {
+    padding: 10px;
+    margin: 20px;
+
+}
+
+a {
+    color: white;
+    margin-left: 40px;
+}
+
+@media (max-width : 768px) {
+ .navbar::after {
+    content: "☰";
+    color: #fff;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  .menu {
+    display: none;
+  }
+}
